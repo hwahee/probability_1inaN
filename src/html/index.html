@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>n분의 1 확률을 n번 시행했을 때</title>
+		<script src="/public/src/ts/index.js" type="module"></script>
+	</head>
+	<body>
+		<div id="root">
+			n: <input id="input_n" type="number" value="32" /> &nbsp;repetition: <input id="input_repetition" type="number" value="32" />
+			<br />
+			<input id="setCount" type="button" value="set count" />
+			<br />
+			<input id="go" type="button" value="RUN" />
+			<input id="stop" type="button" value="STOP" />
+		</div>
+		<hr />
+		<div>
+			<input id="output_n" type=number value="0" readonly />분의 1 확률을 <input id="output_repetition" type="number" value="0" readonly/>번 시행했을 때
+			<br />
+			<input id="output_result" type="text" value="" /><input id="input_speed" type="range" min="10" max="1000" value="1000" /> 
+		</div>
+	</body>
+</html>

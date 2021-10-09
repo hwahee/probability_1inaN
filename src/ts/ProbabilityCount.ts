@@ -1,4 +1,4 @@
-import { Judge } from './Judge'
+import { Judge } from './Judge.js'
 
 class Count {
 	result: boolean[] = []
@@ -42,13 +42,6 @@ class Count {
 	getProbability():string{return `${this.prob}%`}
 }
 
-const TRIAL=100000
+export {Count}
 
-const cnt:Count=new Count()
-const JudgeObject:Judge=new Judge(32, 32)
-cnt.reset(JudgeObject)
 
-for(let i:number=0;i<TRIAL;i++){
-	cnt.run()
-}
-console.log(cnt.getProbability())

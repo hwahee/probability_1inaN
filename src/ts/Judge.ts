@@ -1,4 +1,4 @@
-import {RandomGenerator} from "./RandomGenerator"
+import {RandomGenerator} from "./RandomGenerator.js"
 
 export class Judge {
 	constructor(private n: number = 0, private repetition: number = 1) { }
@@ -9,7 +9,7 @@ export class Judge {
 		this.printStatus()
 	}
 	printStatus(): void {
-		let nth: string = ""
+		let nth: string = `${this.n}th`
 		if (this.n % 10 in [1, 2, 3]) {
 			if (this.n % 100 == 11 || this.n % 100 == 12) {
 				nth = `${this.n}th`
